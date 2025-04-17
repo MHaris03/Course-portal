@@ -1,0 +1,259 @@
+.view-classes-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.Loadingclass {
+  margin-top: 15px;
+  max-width: 1250px;
+}
+
+.heading {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  border: #c20f2f;
+}
+
+.ratings {
+  padding: 5px;
+  min-width: 100%;
+
+}
+
+.filter-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filter-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.class-levels {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-.view-class {
+  width: 100%;
+  padding: 12px;
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.info-text {
+  text-align: left !important;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.submit-.view-class:hover {
+  background-color: #c20f2f;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.class-card {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.class-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.class-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-item span {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #ffc107;
+  display: flex;
+}
+
+.view-class {
+  margin-top: 20px;
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-class:hover {
+  background-color: #c20f2f;
+}
+
+@media (max-width: 768px) {
+  .class-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .class-card p {
+    font-size: 0.9rem;
+  }
+
+  .rating-item span {
+    font-size: 0.8rem;
+  }
+
+  .view-class {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .class-card {
+    padding: 15px;
+  }
+
+  .class-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .class-card p {
+    font-size: 0.85rem;
+  }
+
+  .view-class {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+  padding: 20px;
+
+}
+
+.pagination button {
+  background-color:#c20f2f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: #c20f2f;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  padding: 8px 12px;
+  color: #555;
+}
+
+.view-class {
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-class:hover,
+.active {
+  background-color: #c20f2f;
+}
+
+.view-class.active {
+  background-color: #c20f2f;
+}

@@ -1,0 +1,36 @@
+.yes-no-picker {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #666;
+}
+
+.option .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-bottom: 5px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.option.selected .circle {
+  border-color: #c20f2f;
+  background-color: #c20f2f;
+}
+
+.option.selected p {
+  color: #c20f2f;
+}
+
+.option p {
+  margin: 0;
+  font-size: 16px;
+}

@@ -1,0 +1,102 @@
+.header {
+  background-color: #c20f2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  font-weight: 700;
+}
+
+.heading {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-logo {
+  height: 50px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.header button {
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.header button:hover {
+  background-color: #c20f2f;
+}
+
+.login-text {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+
+  .header button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+
+  .header-logo {
+    height: 35px;
+  }
+
+  .header button {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-logo {
+    height: 30px;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .header button {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+}

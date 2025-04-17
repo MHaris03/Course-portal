@@ -1,0 +1,33 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 20px; /* Adjust based on your design */
+  color: lightgray; /* Default for empty stars */
+  position: relative;
+}
+
+.full-star {
+  color: gold !important;
+}
+
+.half-star {
+  color: lightgray; /* Gray base */
+  position: relative;
+}
+
+.half-star::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: gold; /* Gold for half-star fill */
+  width: 50%; /* Fill half of the star */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.empty-star {
+  color: lightgray;
+}

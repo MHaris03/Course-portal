@@ -1,0 +1,251 @@
+.advanced-search-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group select {
+  width: 85%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input[type="range"] {
+  width: 85%;
+  -webkit-appearance: none;
+  /* Removes default styling */
+  appearance: none;
+  /* For non-WebKit browsers */
+  height: 6px;
+  /* Height of the slider track */
+  background: #ddd;
+  /* Background of the track */
+  border-radius: 5px;
+  /* Rounded track */
+  outline: none;
+  /* Removes focus outline */
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Removes default thumb styling */
+  appearance: none;
+  /* Standard appearance reset */
+  width: 13px;
+  /* Thumb width */
+  height: 13px;
+  /* Thumb height */
+  background: #c20f2f;
+  /* Thumb color */
+  border-radius: 50%;
+  /* Makes the thumb circular */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+.form-group input[type="range"]::-moz-range-thumb {
+  background: #c20f2f;
+}
+
+.form-group span {
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  margin-left: 5px;
+}
+
+.range-slider {
+  margin-top: 10px;
+}
+
+.range-slider .range-values span {
+  font-weight: 500;
+}
+
+.difficulty-range {
+  margin-bottom: 30px;
+}
+
+.range-track {
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.range-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.range-track {
+  height: 6px;
+  width: 85%;
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.range-max {
+  margin-left: 5px;
+}
+
+.range-thumb {
+  height: 26px;
+  width: 26px;
+  background-color: #c20f2f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-values {
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.sort-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.class-levels {
+  margin-top: 20px;
+}
+
+.class-levels-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.class-levels label {
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #c20f2f;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #c20f2f;
+}
+
+.range-track::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #c20f2f;
+  border-radius: 4px;
+}
+
+.search-btn {
+  width: 100%;
+  max-width: 20%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: end;
+  padding: 12px;
+  background-color: #c20f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bottom-btnsubmit {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 20px;
+
+}
+
+.search-btn:hover {
+  background-color: #c20f2f;
+}
+
+
+@media (max-width: 768px) {
+  .advanced-search-container {
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group select {
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

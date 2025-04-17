@@ -1,0 +1,132 @@
+.contact-us-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  height: 90vh;
+  /* background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+}
+
+.contact-us-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us-container input,
+.contact-us-container textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us-container button {
+  width: 94%;
+  padding: 10px;
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-us-container button:hover {
+  background-color: #c20f2f;
+}
+
+@media (max-width: 1200px) {
+  .contact-us-container {
+    padding: 20px;
+    max-width: 600px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-us-container label {
+    font-size: 1rem;
+  }
+
+  .contact-us-container input,
+  .contact-us-container textarea {
+    font-size: 1rem;
+  }
+
+  .contact-us-container button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-us-container {
+    padding: 15px;
+    max-width: 500px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-us-container label {
+    font-size: 0.95rem;
+  }
+
+  .contact-us-container input,
+  .contact-us-container textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-us-container button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .contact-us-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-us-container input,
+  .contact-us-container textarea {
+    font-size: 1rem;
+  }
+
+  .contact-us-container button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .contact-us-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact-us-container input,
+  .contact-us-container textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-us-container button {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,123 @@
+.profile-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #f3f4f6, #e4e9f0);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 4px solid #c20f2f;
+}
+
+.profile-container h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.profile-container p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.profile-container strong {
+  color: #000;
+}
+
+/* Profile Buttons Section */
+.profile-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.profile-button {
+  background-color: #c20f2f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-button:hover {
+  background-color: #c20f2f;
+  transform: translateY(-2px);
+}
+
+.my-reviews-button {
+  background-color: #28a745;
+}
+
+.my-reviews-button:hover {
+  background-color: #218838;
+}
+
+.logout-button {
+  background-color: #dc3545;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.profile-button:active {
+  transform: translateY(2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .profile-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-container p {
+    font-size: 1rem;
+
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+  }
+
+  .profile-button {
+    width: 50%;
+  }
+}

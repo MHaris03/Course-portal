@@ -1,0 +1,39 @@
+.view-reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .reviews-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .review-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-item h2 {
+    margin-top: 0;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+  }
+  
+  .review-item strong {
+    font-weight: bold;
+  }
+
+  .ratings {
+    margin-top: 10px;
+  }
+  
+  .ratings p {
+    margin: 5px 0;
+  }
+  

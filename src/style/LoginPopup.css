@@ -1,0 +1,126 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.login-popup {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+}
+
+.login-popup h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.warning {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.login-popup label {
+  display: block;
+  text-align: left;
+  font-size: 1em;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.login-popup button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #c20f2f;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #c20f2f;
+}
+
+.register-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.register-button:hover {
+  background-color: #388e3c;
+}
+
+.close-button {
+  background-color: #ddd;
+  color: #333;
+}
+
+.close-button:hover {
+  background-color: #bbb;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-popup {
+    padding: 20px;
+  }
+
+  .login-popup h2 {
+    font-size: 1.5em;
+  }
+
+  .login-popup button {
+    font-size: 0.9em;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

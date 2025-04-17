@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+}
+
+.Register-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.registration-container {
+  max-width: 500px;
+  margin: 15px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .registration-container {
+    padding: 20px;
+  }
+}
+
+.registration-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-input,
+.form-select,
+.verification-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* .form-select .form-input{
+  width: 104%;
+} */
+.form-input:focus,
+.form-select:focus,
+.verification-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container .form-input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 42%;
+  transform: translateY(-50%);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.register-button,
+.verify-button,
+.close-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover,
+.verify-button:hover,
+.close-button:hover {
+  background-color: #45a049;
+}
+
+.dropdown-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.verification-popup {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.verification-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.back-button {
+  background-color: gray;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: darkgrey;
+}

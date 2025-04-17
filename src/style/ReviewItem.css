@@ -1,0 +1,93 @@
+.review-item-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.review-item-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.review-item-container h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.review-item-container p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.rating-section {
+  margin: 12px 0;
+}
+
+.rating-bar-container {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: 12px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.rating-bar {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.boolean-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.boolean-badge {
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.boolean-badge.yes {
+  background-color: #4caf50;
+}
+
+.boolean-badge.no {
+  background-color: #f44336;
+}
+
+.tag-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 4px 2px;
+  color: #ffffff;
+}
+
+.tag-badge.active {
+  background-color: #c20f2f;
+}
+
+.tag-badge.inactive {
+  background-color: #bdbdbd;
+  color: #666;
+}
+
+.tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
